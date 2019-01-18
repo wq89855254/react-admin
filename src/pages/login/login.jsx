@@ -84,7 +84,7 @@ class LoginForm extends React.Component {
   clickLogin = () => {
 
     // 只有当验证没有错误时才输出输入的数据
-    this.props.form.validateFields(async (error, values) => {
+      this.props.form.validateFields(async (error, values) => {
       // console.log('validateFields', error, values)
       if(!error) {
         const {username, password} = values
